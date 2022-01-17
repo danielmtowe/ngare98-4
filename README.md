@@ -1,19 +1,18 @@
 # How to install NVIDIA on Ubuntu 20.04 (enablling GPU)
 
-First we find out what type of graphics card is attached to your system using the lshw command 
+First lets find out what type of graphics card is attached to our system using the "lshw" command 
 
 
 - sudo lshw -C display
 
 
 ## Install Nvidia Driver
-We can install the Nvidia drivers in multiple ways and from different sources.
+Nvidia drivers can be installed in multiple ways and from different sources.
 
 1. Graphical Installation
 2. Install Nvidia drivers from Ubuntu repository
   - ubuntu-drivers command
   - apt command
-
 3. Install Nvidia drivers from PPA
 4. Install Nvidia drivers from Official site
 
@@ -29,7 +28,6 @@ Enter the password to authenticate the driver installation. Then, wait for the i
 Reboot the system
 
 After the system reboot, use the below command to validate the driver version.
-
   - sudo nvidia-smi
 
 
@@ -87,23 +85,15 @@ or
 # How to install mobius in Ubuntu 20.04 
 
 
-Node JS installation
+### Node JS installation
 
-sudo apt-get install -y nodejs
+  - sudo apt-get install -y nodejs
+  - sudo apt install npm
 
-sudo apt install npm
-
-
-check the vision installed 
-
-node -v
-(v 10.19.0)
+You can check the version of nodejs installed thought
+  - node -v
 
 
-npm install 
-
-
-### mysql installation
 
 ### MQTT server Installation
 
@@ -126,11 +116,6 @@ Step -2: Notification test
 
 
 
-### Node JS Installation
-
-  - sudo apt-get install nodejs
-
-you can checkk the version of nodejs installed thought the "node -v" command
 
 
 ### Mobius Installation
@@ -146,8 +131,9 @@ After running the npm install command, all additional required node.js modules w
 
 configure the Mobius server in terms of communication port and CSE name e
 
-### Running Mobius Server
-A configuration file conf.json is included in the unzipped folder of Mobius package
+
+
+### mysql installation
 
 sudo apt update
 
@@ -166,3 +152,7 @@ EXIT
 now yo can not login directly 
 
 sudo mysql
+
+
+### Running Mobius Server
+A configuration file conf.json is included in the unzipped folder of Mobius package
