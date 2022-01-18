@@ -120,7 +120,7 @@ Step -2: Notification test
 
 ### Mobius Installation
 
-download the zipped packag from the Mobius GitHub (https://github.com/IoTKETI/Mobius )
+Download the zipped packag from the Mobius GitHub (https://github.com/IoTKETI/Mobius )
 
 After downloading, unzip the package and you will see the included folders and files as Figure
 
@@ -135,23 +135,19 @@ configure the Mobius server in terms of communication port and CSE name e
 
 ### mysql installation
 
-sudo apt update
-
-sudo apt install mysql-server
-
-sudo mysql
+  - sudo apt update
+  - sudo apt install mysql-server
+  - sudo mysql
 
 select user, authentication_string, plugin from mysql.user;
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mobius123';
+  - ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mobius123';
+  - FLUSH PRIVILEGES;
+  - EXIT
 
-FLUSH PRIVILEGES;
+now yo cannot login directly 
 
-EXIT
-
-now yo can not login directly 
-
-sudo mysql
+  - sudo mysql
 
 
 ### Running Mobius Server
